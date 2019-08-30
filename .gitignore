@@ -1,1 +1,4 @@
 .vscode
+.idea
+fn-project/zeebe.cfg.toml
+fn-project/fn-data
