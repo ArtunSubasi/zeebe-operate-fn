@@ -4,8 +4,6 @@ version: 0.0.30
 runtime: python
 entrypoint: /python/bin/fdk /function/func.py handler
 memory: 256
-config:
-  zeebe_job_type: get-customer-consent
 triggers:
 - name: gcc
   type: http
