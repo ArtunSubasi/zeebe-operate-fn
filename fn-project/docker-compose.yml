@@ -79,12 +79,13 @@ services:
     - zeebe_network
   fnserver:
     container_name: fnserver_fn
-    image: artunsubasi/fnserver-zeebe:0.2.1
+    image: artunsubasi/fnserver-zeebe:0.2.2
     environment:
       - FN_LOG_LEVEL=DEBUG
       - FN_LB_URL=http://localhost:8080
       - FN_API_SERVER_URL=http://localhost:8080
       - FN_ZEEBE_GATEWAY_URL=zeebe:26500
+      - FN_ZEEBE_USE_PLAINTEXT_CONNECTION=true
       - FN_IOFS_DOCKER_PATH=$PWD/iofs
       - FN_IOFS_PATH=/iofs
       - FDK_DEBUG=1
