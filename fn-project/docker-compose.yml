@@ -79,7 +79,7 @@ services:
     - zeebe_network
   fnserver:
     container_name: fnserver_fn
-    image: artunsubasi/fnserver-zeebe:0.2.0
+    image: artunsubasi/fnserver-zeebe:0.2.1
     environment:
       - FN_LOG_LEVEL=DEBUG
       - FN_LB_URL=http://localhost:8080
